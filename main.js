@@ -1,4 +1,4 @@
-const madlib_generator = message => {
+const madlibGenerator = message => {
     return {
         message: message,
         adjectives: ['happy','brave','curious','gentle','bright',
@@ -36,21 +36,30 @@ circles around a (noun) . Everyone stopped to stare. A (adjective) old man hande
 and said, "You should always carry one of these when things get (adjective) ."
 I had no idea what he meant, but it was the most (adjective) day I'd ever had.`
 
-let message2 = `Last (adjective) evening, I decided to (verb) through the town square with my trusty (noun).
+let message2 = `Last (adjective) evening, I decided to (verb) through the town square with my 
+trusty (noun) .
 Everything seemed perfectly (adjective) until I spotted a (noun) balancing on top of a fountain.
-Curious, I tried to (verb) closer, but my (adjective) shoelace got tangled around a nearby (noun).
-
+Curious, I tried to (verb) closer, but my (adjective) shoelace got tangled around a nearby
+ (noun) .
 Before I knew it, a crowd had gathered to watch me (verb) in circles.
-A particularly (adjective) spectator handed me a (noun) and insisted it would solve all my problems.
+A particularly (adjective) spectator handed me a (noun) and insisted it would solve all my
+ problems.
 Instead, it caused a (adjective) chain reaction that sent a (noun) rolling across the square.
 
 Soon everyone was trying to (verb) after it.
-My (adjective) companion couldn't stop laughing as a (noun) appeared from nowhere and joined the commotion.
+My (adjective) companion couldn't stop laughing as a (noun) appeared from nowhere and joined
+ the commotion.
 When things finally settled down, a (adjective) street performer gave me a (noun) as a souvenir.
-
-I went home exhausted, wondering why every attempt to (verb) turns into such a (adjective) adventure.`;
-let madlib = madlib_generator(message);
+I went home exhausted, wondering why every attempt to (verb) turns into such a
+ (adjective) adventure.`;
+let madlib = madlibGenerator(message);
+console.log(madlib.generate());
+console.log('*****************************');
+console.log('Here is another madlib of first message:');
 console.log(madlib.generate());
 console.log('-----------------------------');
-let madlib2 = madlib_generator(message2);
+let madlib2 = madlibGenerator(message2);
+console.log(madlib2.generate());
+console.log('*****************************');
+console.log('Here is another madlib of second message:');
 console.log(madlib2.generate());
